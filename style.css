@@ -5,8 +5,7 @@
 body{
 
     background-color: #E5E5E5;
-    font-family: Inter;
-    color: #000;
+    
     
 }
 
@@ -22,14 +21,18 @@ img{
 
     display: flex;
     justify-content: space-between; 
-    margin: 30px 0px -32px 0px;
+    padding-top: 20px;
+    height: 20em;
     
 
 }
 .perfil{
 
     display: flex;
+    width: 50%;
     margin-left: 20px;
+    flex-wrap: wrap;
+    
  
 }
 .foto{
@@ -42,11 +45,10 @@ img{
 }
 .informacoes{
 
-   margin-left: 20px;
+   margin-left: 20px;   
  
 }
 .bt-curriculo{
-
     border-radius: 15px;
     background: #7A7A7A;    
     width: 152px;
@@ -58,7 +60,7 @@ img{
         
 }
 
-/* Estilização Projetos */
+
 .linha{
 
     background-color: #000000a6;
@@ -67,40 +69,80 @@ img{
     filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.973));    
     margin-bottom: 20px;
 }
+/* Estilização Projetos */
 
 section{
     display: flex;
     width: 50%;
     align-items: center;
     flex-direction: column;  
-    height: 192px;   
+     
         
 }
 .container{
 
-   margin-top: 30px ;
+   width: 35em;
+   display: flex;
+   justify-content: space-between;
+   padding: 2em;
+
+}
+#cards img{
+    height: 9.5em;
+    margin: 0px ;  
+    display: block;
+    padding: 0.5em;
+      
+}
+#cards:hover {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02);
     
 }
+
+#cards {
+    /* font-size: 0.85em; */
+    text-align: center;
+    background-color: #FFF;
+    padding: 0;   
+    position: relative;
+    display: flex;       
+ 
+   
+}
+
+
+#cards a {
+
+    text-decoration: none;
+}
+#cards p {
+
+    
+    color: rgba(0, 0, 0, .8);
+    text-transform: uppercase;
+    padding: 0.8em;
+    letter-spacing: 1px;
+    font-size: 0.6em; 
+    
+   
+}
+
   
 
-#card{
-    width: 152px;
-    height: 41px;
-    border-radius: 15px;
-    background: #7A7A7A;
-    border: none;
-    color:  #FFF;
-    letter-spacing: -0.266px;
-    margin: 0px 0px 0px 35px;
-    
-}
-/* Estilização parte Bio */
+/* Estilização Bio */
+
 main{
     width: 50%;
-    display: flex;
-    /* margin: 0px 0px 0px 120px; */
+    display: flex;   
     flex-direction: column;
+    /* text-align: center;     */
     
+}
+.sobre-mim{
+
+    margin-left: 60px;
 }
 #aspas{
 
@@ -108,24 +150,89 @@ main{
     height: 98px;
     
 }
+.abre-aspas{
+    display: flex;
+    justify-content: end;
+}
 .texto{
 
+    padding: 30px 66px 0px 61px;
+    letter-spacing: -0.266px;
+    text-align:justify;
    
 }
 
 /* Estilização footter */
+
+
+
 footer{
 
     background-color: #7A7A7A;
-    height: 76px;
-    display: flex;
-    align-items: center;  
-    justify-content: center;
-    text-align: center;     
+    height: 180px;
+    display: flex;     
        
 }
-#icone{
+#icone-footer{
 
     width: 30px;
     height: 30px;
+}
+form{
+
+ display: flex;
+ width: 30em;
+ flex-direction: column;
+ height: 180px;
+
+  
+}
+.formulario {
+
+    width: 50%;
+    display: flex;
+    align-content: flex-start;
+    margin-left: 10px;
+    
+}
+input, textarea{
+
+    border: 2px solid transparent;
+    border-radius: 2.5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    
+}
+
+.rodape{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.rodape p{
+
+    margin-top: 20px;
+}
+.redes-sociais {
+
+  
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+     
+}
+#icone-footer:hover{
+
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.mensagem  {
+      display: flex;   
+    height: 180px;
+    flex-direction: row;
+   
+ 
 }

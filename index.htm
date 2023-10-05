@@ -10,7 +10,6 @@
 
  
     <nav class="dados-basicos">
-
        
         <div class="perfil">
        
@@ -19,21 +18,24 @@
                 </div>
                 <div class="informacoes">
                      <h1>Cristiane de Lima Borges</h1>
-                     <li>1º Semestre Análise e Desenvolvimento de Sistemas</li>
+                     <li>1º Semestre Análise e Desenvolvimento de Sistemas - CEUB</li>
                      <li>Brasília</li>
                      <li>Desenvolvedora Front End</li>
                      <button class="bt-curriculo">Currículo completo</button>
-                     
+                   
                 </div>
-
-                
-         </div>
-
-        
+                <div class="linha"></div> 
+                </div>
+             </main>
+     
+          
          <main>
-
+            <div class="sobre-mim">
              <h1>Sobre Mim</h1>
-             <img id="aspas" src="./img/dire.png" alt="">
+            </div>
+             <div class="abre-aspas">
+             <img id="aspas" src="./img/dire.png" alt="aspas">
+             </div>
              <div class="texto">
              <p>
                 Desde 2019 venho tentado estudar programação: A primeira tentativa tive que parar no segundo Semestre
@@ -42,29 +44,85 @@
                 até o momento, com o objetivo de me tornar uma Desenvolvedora.
              </p>
             </div>
-             <img id="aspas" src="./img/aspas-e.png">
-             </main>
-    
+             <img id="aspas" src="./img/aspas-e.png" alt="aspas">
+     
     </nav>
     
     <section>
-        <div class="linha"></div>
+        
        
         <h1>Projetos</h1>
             <div class="container">
-                <button id="card">Projeto Elas na Tech</button>
-                <button id="card">Projeto Rocketset </button>
-                <button id="card">Projeto Labenu </button>
+                
+            <div id="cards">
+                <a href="https://crixlima.github.io/nlw-setup/" target="_blank">
+                    <img id="previa" src="./img/preview.jpg" alt="">
+                    <p> NLW - Rocketseat</p></a>                
+            </div>
+
+            <div id="cards">
+                <a href="https://crixlima.github.io/ods/" target="_blank">
+                    <img id="previa" src="./img/previewods.png" alt="">
+                <p> ODS - Elas na Tech </p></a>
+                
+            </div id="cards">
+
+            <div id="cards">
+                <a href="https://tense-teeth.surge.sh" target="_blank">
+                    <img id="previa" src="./img/landindpage.png" alt="">
+                    <p> Landindpage - Labenu</p></a>
+                
+            </div>
             </div>
     </section>
 
-    <footer>
-        <div class="rodape">
-        <p>Redes sociais </p>
-            <img id="icone" src="./img/github_.png" alt="icone github">
-            <img id="icone" src="./img/instagram_.png" alt="icone instagram">
-            <img id="icone" src="./img/linkedin_.png" alt="icone Linkedin">
-            <p></p>
+    <footer>       
+        <div class="formulario">
+            <form  method="post">
+                
+                <legend>Contato:</legend>
+
+                    <div class="nome">
+                    <label class="label-1"  for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="email">
+                    <label  class="label-2" for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                    </div>
+
+                    <div   class="mensagem">
+                    <label class="label-3" for="">Deixe sua mensagem:</label>
+                        <div class="texto-mensagem">
+                        <textarea type="text" id="message" name="message"  required maxlength="1000" minlength="30"
+                         placeholder="Diga aí!..">
+                         </textarea>
+                        </div>
+                        <input type="submit" class="bt-footer"> 
+                    </div>
+                   
+                   
+            </form> 
+            </div>
+        
+        <div class="rodape">    
+
+            <p>Redes Sociais</p>
+
+            <div class="redes-sociais">
+
+                    <a href="https://www.linkedin.com/in/crixborges" target="_blank">
+                    <img id="icone-footer" src="./img/linkedin_.png" alt="icone Linkedin">
+                    </a>
+                    <a href="https://www.instagram.com/crix_borges/" target="_blank">
+                    <img id="icone-footer" src="./img/instagram_.png" alt="icone instagram">
+                    </a>
+                    <a href="https://github.com/crixlima" target="_blank">
+                    <img id="icone-footer" src="./img/github_.png" alt="icone github">
+                    </a>
+             </div>
+            <p>© 2023 Cristiane de Lima Borges</p>
         </div>
     </footer>
 
