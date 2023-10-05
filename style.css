@@ -4,8 +4,7 @@
 }
 body{
 
-    background-color: #E5E5E5;
-    
+    background-color: #E5E5E5;  
     
 }
 
@@ -23,6 +22,7 @@ img{
     justify-content: space-between; 
     padding-top: 20px;
     height: 20em;
+
     
 
 }
@@ -183,7 +183,10 @@ form{
  display: flex;
  width: 30em;
  flex-direction: column;
+ justify-content: center;
+ align-items: center;
  height: 180px;
+
 
   
 }
@@ -191,7 +194,7 @@ form{
 
     width: 50%;
     display: flex;
-    align-content: flex-start;
+    flex-direction: column;
     margin-left: 10px;
     
 }
@@ -199,8 +202,9 @@ input, textarea{
 
     border: 2px solid transparent;
     border-radius: 2.5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
-    
+    margin: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);         
+    border: #949494 solid 1px;
 }
 
 .rodape{
@@ -225,14 +229,11 @@ input, textarea{
 }
 #icone-footer:hover{
 
-    transform: scale(1.02);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.05);   
 
 }
-.mensagem  {
-      display: flex;   
-    height: 180px;
-    flex-direction: row;
-   
- 
+.mensagem textarea{
+
+    height: 30px;
 }
+
