@@ -4,8 +4,14 @@
 }
 body{
 
-    background-color: #E5E5E5;  
+    background-color:#FFFFFF; 
+    color: #757575;;
     
+}
+body  h1{
+
+    font-size: 1.7em;
+    margin: 0px 0px 10px 0px;
 }
 
 /* Estilização Perfil */
@@ -41,7 +47,7 @@ img{
     height: 226px;
     border-radius: 5px;
     background: #FFF;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
 }
 .informacoes{
 
@@ -56,11 +62,20 @@ img{
     margin-top: 60px;   
     color: #FFF;
     border: none;
-    letter-spacing: -0.266px;
-        
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  
+           
 }
+.bt-curriculo embed{
+    
+    display: none;
+}
+.bt-curriculo:hover{
 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02);
+    
 
+}
 .linha{
 
     background-color: #000000a6;
@@ -88,10 +103,11 @@ section{
 
 }
 #cards img{
-    height: 9.5em;
+    height: 9.0em;
     margin: 0px ;  
     display: block;
     padding: 0.5em;
+    
       
 }
 #cards:hover {
@@ -107,7 +123,8 @@ section{
     background-color: #FFF;
     padding: 0;   
     position: relative;
-    display: flex;       
+    display: flex;     
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    
  
    
 }
@@ -159,6 +176,7 @@ main{
     padding: 30px 66px 0px 61px;
     letter-spacing: -0.266px;
     text-align:justify;
+    font-size: 1.4em;
    
 }
 
@@ -168,10 +186,10 @@ main{
 
 footer{
 
-    background-color: #7A7A7A;
+    background-color:  #7A7A7A;
     height: 180px;
-    display: flex;     
-       
+    display: flex;   
+       color: rgb(17, 19, 19);
 }
 #icone-footer{
 
@@ -186,7 +204,6 @@ form{
  justify-content: center;
  align-items: center;
  height: 180px;
-
 
   
 }
